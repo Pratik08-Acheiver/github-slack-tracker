@@ -18,7 +18,7 @@ public class GitHubWebhookController {
     public ResponseEntity<String> receivePush(
             @RequestBody GitHubPushDto payload) {
         webhookService.processPush(payload);
-        return ResponseEntity.ok("Webhook processed successfully!!");
+        return ResponseEntity.ok("Webhook processed");
     }
 }
 
